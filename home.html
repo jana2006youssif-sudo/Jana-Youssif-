@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jana Youssif - Personal Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .welcome {
+      height: 100vh;
+      background-image: url('resources/welcome-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .welcome h1 {
+      font-size: 3em;
+      color: #ffeb3b;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .welcome h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      color: #fff;
+    }
+    .welcome a {
+      position: absolute;
+      bottom: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .welcome a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    #home {
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background-color: #4caf50;
+      color: white;
+      font-size: 2em;
+    }
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .info {
+      width: 100%;
+      max-width: 700px;
+      min-width: 250px;
+    }
+    .about {
+      padding: 20px;
+      max-width: 900px;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background: #eee;
+    }
+    .links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 15px;
+      position: relative;
+    }
+    footer img {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      vertical-align: middle;
+      border-radius: 5px;
+    }
+    .to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .to-top img {
+      width: 40px;
+    }
+    hr {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body id="top">
+  <section class="welcome" id="welcome">
+    <h1>Welcome to My Website</h1>
+    <h2>Jana Youssif</h2>
+    <a href="#home">Skip Intro</a>
+  </section>
+
+  <section id="home">
+    <header>Jana Youssif</header>
+
+    <main>
+      <div class="info">
+        <h3>My Personal Info:</h3>
+        <ul>
+          <li><strong>Age:</strong> 19</li>
+          <li><strong>Address:</strong> Egypt</li>
+          <li><strong>Phones:</strong>
+            <ul>
+              <li>01276497368</li>
+              <li>01288658789</li>
+            </ul>
+          </li>
+          <li><strong>Faculty Name:</strong> 
+            <a href="https://suez.edu.eg/ar/" target="_blank" rel="noopener noreferrer">Suez Canal University</a>
+          </li>
+          <li><strong>Year of Study:</strong> Second year (will graduate after 4th year)</li>
+          <li><strong>Hobbies:</strong>
+            <ul>
+              <li>Reading</li>
+              <li>Programming</li>
+            </ul>
+          </li>
+          <li><a href="mailto:janayoussif@example.com">Send me Email</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <section class="about" id="about">
+      <h3>About Me:</h3>
+      <p>
+        I’m Jana Youssif, a passionate computer science student at Suez Canal University.
+        I love web development and programming because they allow me to turn creative ideas into real, interactive experiences.
+        I’m constantly learning new technologies and improving my skills to build websites that are both beautiful and functional.
+        My goal is to become a full-stack web developer and contribute to projects that make people’s lives easier.
+      </p>
+    </section>
+
+    <hr>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="mailto:janayoussif@example.com">Contact Me</a>
+    </div>
+
+    <footer>
+      <p>Copyrights © are reserved to Jana Youssif.</p>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="resources/fb.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="resources/twitter.png" alt="Twitter"></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="resources/linkedin.png" alt="LinkedIn"></a>
+    </footer>
+
+    <a href="#top" class="to-top"><img src="resources/up-arrow.png" alt="Go to top"></a>
+  </section>
+</body>
+</html>
